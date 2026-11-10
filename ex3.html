@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 3</title>
+  </head>
+  <body>
+    <label for="nomEtdiant">Nom Etudinat</label>
+    <input type="text" id="nomEtudiant" value="" />
+    <br /><input type="radio" id="pre" name="actionDOM" value="pre" />
+    <label for="pre">Ajouter au tout début</label>
+    <br /><input type="radio" id="app" name="actionDOM" value="app" />
+    <label for="app">Ajouter a la toute fin</label>
+    <br /><input type="radio" id="bef" name="actionDOM" value="bef" />
+    <label for="bef">Insérer juste avant l'etudiant reference</label>
+    <br /><input type="radio" id="af" name="actionDOM" value="af" />
+    <label for="af">Insérer juste aprés l'etudiant reference</label>
+    <br />
+    <input type="radio" id="rep" name="actionDOM" value="rep" />
+    <label for="rep">Remplacer l'etudiant reference</label>
+    <br />
+    <button onclick="executerAction()">Exécuter l'action</button>
+    <button onclick="reinitialiserFile()">Vider la file</button>
+
+    <ul id="fileAttente">
+      <li id="etud-cible" class="selectionne">
+        Etudiant Reference : Mohamed Ben Ali ( DSI )
+      </li>
+    </ul>
+    <script src="ex3.js"></script>
+  </body>
+</html>
